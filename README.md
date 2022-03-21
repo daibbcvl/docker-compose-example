@@ -44,6 +44,7 @@ services:
      - /var/run/docker.sock:/var/run/docker.sock
      - /proc/:/host/proc/:ro
      - /sys/fs/cgroup:/host/sys/fs/cgroup:ro
+     - 1${GRAYLOG_HTTP_PORT-9090}:${GRAYLOG_HTTP_PORT-9000}
 ```
 
 # Configuring the Agent
